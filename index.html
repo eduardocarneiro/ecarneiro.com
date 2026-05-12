@@ -1,1 +1,291 @@
-#!/local/ecarneiro
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Eduardo Carneiro | Infrastructure & Cloud</title>
+      <meta name="description" content="Senior Infrastructure, Linux, Cloud and DevOps Professional." />
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+      <style>
+         *{margin:0;padding:0;box-sizing:border-box}
+         html{scroll-behavior:smooth}
+         body{
+         font-family:'Inter',sans-serif;
+         background:#f8fafc;
+         color:#0f172a;
+         line-height:1.7;
+         }
+         .container{
+         max-width:1150px;
+         margin:auto;
+         padding:0 24px;
+         }
+         .hero{
+         padding:120px 0 90px;
+         position:relative;
+         overflow:hidden;
+         }
+         .hero::before{
+         content:'';
+         position:absolute;
+         width:500px;
+         height:500px;
+         background:radial-gradient(circle,#dbeafe 0%,transparent 70%);
+         top:-200px;
+         right:-150px;
+         z-index:-1;
+         }
+         .badge{
+         display:inline-block;
+         padding:8px 14px;
+         background:#eff6ff;
+         color:#2563eb;
+         border:1px solid #bfdbfe;
+         border-radius:999px;
+         font-size:13px;
+         font-weight:600;
+         letter-spacing:.08em;
+         text-transform:uppercase;
+         }
+         .hero h1{
+         font-size:72px;
+         line-height:1;
+         margin:20px 0;
+         font-weight:700;
+         }
+         .hero p{
+         font-size:22px;
+         color:#475569;
+         max-width:760px;
+         }
+         .buttons{
+         display:flex;
+         gap:16px;
+         margin-top:40px;
+         flex-wrap:wrap;
+         }
+         .btn{
+         padding:15px 24px;
+         border-radius:14px;
+         text-decoration:none;
+         font-weight:600;
+         transition:.3s;
+         }
+         .btn-primary{
+         background:#2563eb;
+         color:white;
+         box-shadow:0 10px 25px rgba(37,99,235,.15);
+         }
+         .btn-primary:hover{
+         transform:translateY(-2px);
+         }
+         .btn-secondary{
+         background:white;
+         border:1px solid #cbd5e1;
+         color:#0f172a;
+         }
+         .section{
+         padding:70px 0;
+         }
+         .section-title{
+         font-size:42px;
+         margin-bottom:28px;
+         }
+         .grid{
+         display:grid;
+         grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+         gap:24px;
+         }
+         .card{
+         background:white;
+         border:1px solid #e2e8f0;
+         border-radius:24px;
+         padding:32px;
+         box-shadow:0 8px 30px rgba(15,23,42,.04);
+         transition:.3s;
+         }
+         .card:hover{
+         transform:translateY(-4px);
+         box-shadow:0 18px 40px rgba(15,23,42,.08);
+         }
+         .card h3{
+         font-size:24px;
+         margin-bottom:16px;
+         }
+         .card p, .card li{
+         color:#475569;
+         }
+         .skills{
+         display:grid;
+         grid-template-columns:repeat(2,minmax(120px,1fr));
+         gap:10px;
+         list-style:none;
+         }
+         .timeline{
+         display:flex;
+         flex-direction:column;
+         gap:18px;
+         }
+         .timeline-item{
+         background:white;
+         border:1px solid #e2e8f0;
+         border-radius:20px;
+         padding:24px;
+         }
+         .timeline-item strong{
+         display:block;
+         font-size:18px;
+         margin-bottom:6px;
+         }
+         .contact-box{
+         text-align:center;
+         padding:60px 30px;
+         }
+         .contact-box a{
+         color:#2563eb;
+         text-decoration:none;
+         font-weight:600;
+         }
+         .footer{
+         padding:40px 0 60px;
+         text-align:center;
+         color:#64748b;
+         font-size:14px;
+         }
+         .fade{
+         opacity:0;
+         transform:translateY(30px);
+         transition:all .8s ease;
+         }
+         .fade.show{
+         opacity:1;
+         transform:none;
+         }
+         @media(max-width:768px){
+         .hero h1{font-size:48px}
+         .hero p{font-size:18px}
+         .section-title{font-size:34px}
+         }
+      </style>
+   </head>
+   <body>
+      <section class="hero">
+         <div class="container">
+            <span class="badge">Available for Remote Roles | USA | Europe | LATAM</span>
+            <h1>Eduardo Carneiro</h1>
+            <p>
+               Senior DevOps and Cloud Engineer with 15+ years of experience designing, implementing and supporting large-scale enterprise infrastructure environments. Strong expertise in Kubernetes, OpenShift, Linux, AWS, automation and cloud-native operations across multinational companies including Red Hat, CSL Plasma, Cielo and Huawei, F9C and TripleS.
+            </p>
+            <div class="buttons">
+               <a href="#contact" class="btn btn-primary">Contact Me</a>
+               <a href="./Eduardo_Carneiro_Resume.pdf" download class="btn btn-secondary">Download Resume</a>
+               <a href="#experience" class="btn btn-secondary">View Experience</a>
+            </div>
+         </div>
+      </section>
+      <section class="section">
+         <div class="container grid">
+            <div class="card fade">
+               <h3>About Me</h3>
+               <p>
+                  Infrastructure and operations specialist focused on reliability, scalability, automation and enterprise platform modernization. Extensive hands-on experience with Kubernetes, OpenShift, VMware, AWS, CI/CD pipelines, GitOps methodologies and high-availability environments supporting global operations across LATAM, North America, EMEA and APAC.
+               </p>
+            </div>
+            <div class="card fade">
+               <h3>Core Skills</h3>
+               <ul class="skills">
+                  <li>Kubernetes</li>
+                  <li>OpenShift</li>
+                  <li>AWS / EKS</li>
+                  <li>Linux / RHEL</li>
+                  <li>Ansible</li>
+                  <li>GitLab CI</li>
+                  <li>ArgoCD / GitOps</li>
+                  <li>VMware</li>
+                  <li>Terraform</li>
+                  <li>Networking</li>
+                  <li>Prometheus / Grafana</li>
+                  <li>Cloud Architecture</li>
+               </ul>
+            </div>
+         </div>
+      </section>
+      <section class="section" id="experience">
+         <div class="container">
+            <h2 class="section-title">Career Highlights</h2>
+            <div class="timeline">
+               <div class="timeline-item fade">
+                  <strong>CSL Plasma — DevOps / OpenShift Engineer</strong>
+                  Supporting mission-critical OpenShift environments, CI/CD automation, GitOps initiatives, monitoring platforms and AWS/EKS modernization projects for global healthcare operations.
+               </div>
+               <div class="timeline-item fade">
+                  <strong>Red Hat — Senior Technical Support Engineer</strong>
+                  Provided global Level 3 OpenShift support across LATAM, North America, EMEA and APAC regions, specializing in Kubernetes troubleshooting, ETCD, cluster architecture and enterprise reliability.
+               </div>
+               <div class="timeline-item fade">
+                  <strong>Cielo — DevOps / Cloud Specialist</strong>
+                  Worked on large-scale Kubernetes and OpenShift environments in the financial sector, supporting AWS migration initiatives, CI/CD modernization and enterprise DevOps transformation.
+               </div>
+               <div class="timeline-item fade">
+                  <strong>F9C Security — OpenShift Consultant</strong>
+                  Delivered enterprise OpenShift implementations and consulting services for large customers, focusing on automation, DevOps practices and cloud-native adoption.
+               </div>
+               <div class="timeline-item fade">
+                  <strong>Huawei — IT Consultant</strong>
+                  Led strategic data center migration initiatives, VMware infrastructure projects and enterprise storage migrations for telecom environments.
+               </div>
+               <div class="timeline-item fade">
+                  <strong>F9C Security — IT Consultant / Pre-Sales Engineer</strong>
+                  Supported large-scale VMware, Red Hat and OpenStack environments, acting as technical lead for enterprise infrastructure projects and operational optimization.
+               </div>
+               <div class="timeline-item fade">
+                  <strong>Triple S — VMware Consultant</strong>
+                  Participated in nationwide virtualization projects, helping enterprise customers modernize infrastructure using VMware technologies and early VDI initiatives in Brazil.
+               </div>
+            </div>
+         </div>
+         </div>
+      </section>
+      <section class="section">
+         <div class="container">
+            <div class="card contact-box fade" id="contact">
+               <h2 class="section-title">Let's Connect</h2>
+               <p>
+                  Available for international remote opportunities, enterprise infrastructure projects and cloud operations roles.
+               </p>
+               <br>
+               <p>Email: <a href="mailto:eduardo.oc@gmail.com">eduardo.oc@gmail.com</a></p>
+               <p>
+                  <a href="https://github.com/eduardocarneiro" target="_blank">GitHub</a> • 
+                  <a href="https://www.linkedin.com/in/e-carneiro" target="_blank">LinkedIn</a> • 
+                  <a href="./Eduardo_Carneiro_Resume.pdf" download>Resume PDF</a>
+               </p>
+               <br>
+               <p>
+                  CKA • CKAD • RHCSA • VCAP • Multiple VMware Certifications
+               </p>
+            </div>
+         </div>
+      </section>
+      <footer class="footer">
+         <div class="container">
+            © 2026 Eduardo Carneiro — All rights reserved.
+         </div>
+      </footer>
+      <script>
+         const observer = new IntersectionObserver(entries => {
+         entries.forEach(entry => {
+         if(entry.isIntersecting){
+         entry.target.classList.add('show');
+         }
+         });
+         },{threshold:0.15});
+         
+         document.querySelectorAll('.fade').forEach(el => {
+         observer.observe(el);
+         });
+      </script>
+   </body>
+</html>
